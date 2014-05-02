@@ -1,5 +1,5 @@
 #What is Rettit?
-Rettit is a simple browser extension that improves your reddit experience by simply loading retina thumbnails directly off of imgur links.
+Rettit is a simple browser extension that improves your reddit experience by simply loading retina thumbnails directly off of imgur/livememe image links.
 
 #How do I install Rettit?
 
