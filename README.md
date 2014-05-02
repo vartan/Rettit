@@ -4,3 +4,7 @@ Rettit is a simple browser extension that improves your reddit experience by sim
 #How do I install Rettit?
 
 [Click here](https://github.com/Vartan/Rettit/raw/master/Rettit.user.js) to install the userscript to your browser (if supported).
+
+#Visualization
+
+![Image Quality Visualization](https://raw.githubusercontent.com/Vartan/Rettit/master/quality.gif "Image Quality Visualization")
