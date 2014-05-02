@@ -4,7 +4,7 @@
 // @namespace       http://www.mvartan.com/
 // @description     Creates retina thumbnails for single-image imgur posts
 // @license         Creative Commons Attribution License
-// @version	        0.1
+// @version         0.1
 // @include         http://*.reddit.com/*
 // @include         http://*.reddit.com/
 // @include         http://reddit.com/*
@@ -20,6 +20,14 @@
       var image = $(this) .find('img');
       var lastDotIndex = link.lastIndexOf('.');
       var snipPoint = lastDotIndex > 20 ? lastDotIndex : link.length;
+      image.removeAttr('width');      image.removeAttr('height');
+        image.css({
+            "display":"block", 
+            "max-width": "70px", 
+            "max-height": "70px",
+            "width":"auto",
+            "height":"auto"
+        })
       image.attr('src', link.substring(0, snipPoint) + 'b.jpg');
       console.log(snipPoint)
     }
