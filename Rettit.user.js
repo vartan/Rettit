@@ -20,7 +20,7 @@
       var image = $(this) .find('img');
       var lastDotIndex = link.lastIndexOf('.');
       var snipPoint = lastDotIndex > 20 ? lastDotIndex : link.length;
-      image.attr('src', link.substring(0, snipPoint) + 't.jpg');
+      image.attr('src', link.substring(0, snipPoint) + 'b.jpg');
       console.log(snipPoint)
     }
   });
