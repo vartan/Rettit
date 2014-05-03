@@ -29,7 +29,7 @@
                 'height': 'auto'
             })
             image.attr('src', link.substring(0, snipPoint) + 'b.jpg');
-            console.log(snipPoint)
+            //console.log(snipPoint)
         } else if (link.indexOf('livememe.com') > 0) {
             var importantPart = link.substring(link.lastIndexOf('/'));
             image.removeAttr('width');
@@ -42,7 +42,7 @@
                 'height': 'auto'
             });
             image.attr('src', 'http://i.lvme.me' + importantPart);
-            console.log(importantPart);
+            //console.log(importantPart);
         }
     });
 }) ();
