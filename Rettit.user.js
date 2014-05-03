@@ -1,3 +1,4 @@
+
 // ==UserScript==
 // @name            Reddit Retina Thumbnails
 // @author          Vartan
@@ -16,7 +17,7 @@
     $('.thumbnail') .each(function () {
         var link = this.href;
         var image = $(this) .find('img');
-        if (link.indexOf('imgur.com') > 0 && link.indexOf('/a/') == - 1) {
+        if (link.indexOf('imgur.com') > 0 && link.indexOf('/a/') == - 1  && link.indexOf('/gallery/') == - 1) {
             var lastDotIndex = link.lastIndexOf('.');
             var snipPoint = lastDotIndex > 20 ? lastDotIndex : link.length;
             image.removeAttr('width');
@@ -29,7 +30,7 @@
                 'height': 'auto'
             })
             image.attr('src', link.substring(0, snipPoint) + 'b.jpg');
-            //console.log(snipPoint)
+            console.log(snipPoint)
         } else if (link.indexOf('livememe.com') > 0) {
             var importantPart = link.substring(link.lastIndexOf('/'));
             image.removeAttr('width');
@@ -42,7 +43,7 @@
                 'height': 'auto'
             });
             image.attr('src', 'http://i.lvme.me' + importantPart);
-            //console.log(importantPart);
+            console.log(importantPart);
         }
     });
 }) ();
